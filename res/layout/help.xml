@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="7dp" >      
+        
+        
+		<TextView
+            android:id="@+id/txtHelpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="6dp"
+            android:text="Help"
+            android:textColor="#50BCEC"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/imgMenuImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txtHelpTitle"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/menu_option_image"
+            android:background="@drawable/selector" />
+
+        <ImageView
+            android:id="@+id/imgDevidingLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imgMenuImage"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/menu_body_devider" />
+        
+        		<TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgDevidingLine"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="147dp"
+            android:text="Help Texts Here"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+        <RelativeLayout
+            android:id="@+id/popUpMenuLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_alignRight="@+id/imgMenuImage"
+            android:layout_alignTop="@+id/imgDevidingLine"
+            android:background="#666666"
+            android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/save_button"
+            android:text="Profile" />
+
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnBilling"
+            android:layout_below="@+id/btnBilling"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/save_button"
+            android:text="Help" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnHelp"
+            android:layout_below="@+id/btnHelp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"            
+            android:background="@drawable/save_button"
+            android:text="Logout"
+             />
+
+        <Button
+            android:id="@+id/btnBilling"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnProfile"
+            android:layout_below="@+id/btnProfile"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/save_button"
+            android:text="Billing" />
+        
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/btnLogout" />
+            
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+  
+
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+        
+        <RelativeLayout
+        android:id="@+id/relativeLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/background_black" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="6dp"
+            android:text="Create Account"
+            android:textColor="#50BCEC"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            
+            android:layout_marginTop="28dp"
+            android:src="@drawable/menu_body_devider" />
+        
+        
+        <EditText            
+            android:id="@+id/edtFullName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"            
+            android:layout_marginTop="38dp"
+            android:background="@drawable/custom_edittext"
+            android:textColor="@android:color/white"
+            android:paddingBottom="6dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+        
+        <TextView
+            android:id="@+id/txtFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/edtFullName"
+            android:layout_marginLeft="17dp"
+            android:text="Full Name"
+            android:textColor="#FFFFFF" />
+        
+        <EditText
+            android:id="@+id/edtUsernameRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_edittext"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/txtFullName"
+            android:paddingBottom="6dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+        
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/edtUsernameRegister"
+            android:layout_marginLeft="17dp"
+            android:text="Username"
+            android:textColor="#FFFFFF" />
+        
+        <EditText
+            android:id="@+id/edtPasswordRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtUsername"            
+            android:background="@drawable/custom_edittext"
+            android:textColor="@android:color/white"
+            android:paddingBottom="6dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+        
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtPasswordRegister"
+            android:layout_alignRight="@+id/txtUsername"
+            android:text="Password"
+            android:textColor="#FFFFFF" />
+        
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPassword"
+            android:background="@drawable/custom_edittext"    
+            android:textColor="@android:color/white"
+            android:paddingBottom="6dp"        
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+        
+        <TextView
+            android:id="@+id/txtConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtUsername"
+            android:layout_below="@+id/edtConfirmPassword"
+            android:text="Confirm Password"
+            android:textColor="#FFFFFF" />
+        
+        <EditText
+            android:id="@+id/edtEmailRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConfirmPassword"          
+            android:background="@drawable/custom_edittext"           
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:paddingBottom="6dp"
+            android:textCursorDrawable="@null" />
+        
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtEmailRegister"
+            android:layout_alignLeft="@+id/txtUsername"
+            android:text="Email"
+            android:textColor="#FFFFFF" />
+        
+        <EditText
+            android:id="@+id/edtAddressRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"           
+            android:inputType="text"
+            android:singleLine="true"
+            android:background="@drawable/custom_edittext"
+            android:textColor="@android:color/white"
+            android:paddingBottom="6dp"
+            android:textCursorDrawable="@null" />            
+        
+        
+        <TextView
+            android:id="@+id/txtMyAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtPassword"
+            android:layout_below="@+id/edtAddressRegister"
+            android:text="My Address"
+            android:textColor="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/spnrCity"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/spnrCountry"
+            android:layout_below="@+id/spnrCountry"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/spinner_back"            
+            android:prompt="@string/city_prompt" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spnrCity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/create_account_save_button"
+            android:text="Save"
+             />
+
+        <Spinner
+            android:id="@+id/spnrCountry"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/txtMyAddress"
+            android:layout_below="@+id/txtMyAddress"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/spinner_back"
+            android:prompt="@string/country_prompt" />
+        
+    </RelativeLayout>
+        
+    </ScrollView>   
+
+</RelativeLayout>

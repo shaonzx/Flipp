@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTopNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="7dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="6dp"
+            android:text="Cab Info"
+            android:textColor="#50BCEC"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/imgMenuImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/txtDetectingAddress"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/menu_option_image" />
+
+        <ImageView
+            android:id="@+id/imgDevidingLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imgMenuImage"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/menu_body_devider" />
+        
+        
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutMapLive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imgDevidingLine" >
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/imgTalkDriver"
+                class="com.google.android.gms.maps.MapFragment" />
+
+            <ImageView
+                android:id="@+id/imgTalkDriver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/selector"
+                android:src="@drawable/talk_driver_button" />
+        </RelativeLayout>
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>
